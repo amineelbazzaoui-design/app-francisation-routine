@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Routine quotidienne - Remets les mots en ordre</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Routine quotidienne</h1>
+      <p class="subtitle">Clique sur les mots pour reconstruire la phrase.</p>
+    </header>
+
+    <section class="card">
+      <p class="meta">Phrase <span id="current-number">1</span> / <span id="total-number">6</span></p>
+      <div id="target" class="target" aria-live="polite"></div>
+
+      <div>
+        <h2>Mots mélangés</h2>
+        <div id="word-bank" class="word-bank"></div>
+      </div>
+
+      <div class="actions">
+        <button id="verify-btn" class="btn primary">Vérifier</button>
+        <button id="reset-btn" class="btn secondary">Effacer</button>
+        <button id="next-btn" class="btn secondary" disabled>Phrase suivante</button>
+      </div>
+
+      <p id="feedback" class="feedback" aria-live="assertive"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
